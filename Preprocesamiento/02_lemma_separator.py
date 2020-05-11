@@ -3,10 +3,14 @@ from complementos import *
 def main():
     filenames = get_filenames()
     fnumber = 0
-    for i in filenames:
+    print("file inicio")
+    ini = int(input())
+    print("file final")
+    fin = int(input)
+    for i in range(ini, fin):
         print("filenumber: " + str(fnumber))
         fnumber += 1
-        with open("../Datos/01_Cleaned_data/without_stop/" +  i, "r") as fgc:
+        with open("../Datos/01_Cleaned_data/without_stop/" +  filenames[i], "r") as fgc:
             with open("../Datos/02_lemma_data/" +  i, "w") as clgc:
                 lines = fgc.readlines()
                 it = 1
