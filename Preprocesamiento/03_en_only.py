@@ -10,12 +10,12 @@ def main():
     for i in range(ini, fin + 1):
         print("filenumber: " + str(fnumber))
         fnumber += 1
-        with open("../Datos/01_Cleaned_data/without_stop/" +  filenames[i], "r") as fgc:
-            with open("../Datos/02_lemma_data/" +  filenames[i], "w") as clgc:
+        with open("../Datos/02_lemma_data/" +  filenames[i], "r") as fgc:
+            with open("../Datos/03_en_only/" +  filenames[i], "w") as clgc:
                 lines = fgc.readlines()
                 it = 1
                 for j in lines:
-                    answer = check_lemma(j)
+                    answer = check_en(j)
                     if answer != False:
                         clgc.write(answer)
                     if it % 1000 == 0:
