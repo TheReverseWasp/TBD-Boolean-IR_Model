@@ -1,5 +1,9 @@
 from complementos import *
 
+#script complementario de generación de palabras actuales en los archivos limpiados de un determinado estado
+#se puede configurar para cualquier fase modularizada
+#su ejecucion es opcional
+
 def main():
     filenames = get_filenames()
     fnumber = 0

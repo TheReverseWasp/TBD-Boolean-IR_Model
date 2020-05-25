@@ -11,6 +11,7 @@ from multiprocessing import Pool
 
 prevpath = "../Datos/04_words_data_s/"
 
+#funcion que calcula la distancia de los json de palabras dada una funcion y un rango
 def f(tup):
     (ini, fin, diclist, lemma_w, d1, fun_bn, it) = tup
     answer = {}
@@ -28,6 +29,10 @@ def f(tup):
     final_answer = [[k, v] for k,v in answer.items()]
     return final_answer
 
+#Funcion que calcula la distancia de un modelo booleano uno contra todos
+#Parametros: palabra a calcular,
+#label de alert dado un imprevisto y
+#la app para poder ofrecer una actualizacion
 def get_rows_bool(word, lblAlert, app):
     p = Pool(11)
     dictionaryC = {}
@@ -61,6 +66,10 @@ def get_rows_bool(word, lblAlert, app):
     list_words.reverse()
     return list_words
 
+#Funcion que calcula la distancia de un modelo normal uno contra todos
+#Parametros: palabra a calcular,
+#label de alert dado un imprevisto y
+#la app para poder ofrecer una actualizacion
 def get_rows_distance(word, lblAlert, app):
     p = Pool(11)
     dictionaryC = {}

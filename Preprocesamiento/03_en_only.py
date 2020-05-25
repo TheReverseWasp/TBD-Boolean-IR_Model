@@ -1,5 +1,9 @@
 from complementos import *
 
+#Script de limpieza final que verifica si las palabras dentro de los archivos estan en ingles
+#(ejecucion obligatoria)
+#guarda los archivos dentro de ../Datos/03_en_only/ con el mismo nombre del corpus
+
 def main():
     filenames = get_filenames()
     print("file inicio")

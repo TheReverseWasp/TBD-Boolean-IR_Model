@@ -4,6 +4,7 @@ from helpers import *
 app = QApplication(sys.argv)
 
 class Interfaz(QDialog):
+    #inicializados valores de botones e interfaz
     def __init__(self):
         self.carta_trampa = 0
         super(Interfaz, self).__init__()
@@ -13,7 +14,6 @@ class Interfaz(QDialog):
         self.btnProcessDistance.clicked.connect(self.on_btnProcessDistance_clicked)
     @pyqtSlot()
     def on_btnProcessBool_clicked(self):
-        #print("lol")
         self.carta_trampa += 1
         if self.carta_trampa % 2 == 1:
             return
@@ -24,6 +24,7 @@ class Interfaz(QDialog):
         full_rows = get_rows_bool(self.txtWord.toPlainText(), self.lblAlert, app)
         end = time.time()
         print("tiempo: " + str(end - start))
+        #En caso de fallar se produce una alerta
         if full_rows == False:
             self.lblAlert.setText("Resultado: Error al procesar")
             return
@@ -43,8 +44,9 @@ class Interfaz(QDialog):
         start = time.time()
         full_rows = get_rows_distance(self.txtWord.toPlainText(), self.lblAlert, app)
         end = time.time()
+        print("tiempo: " + str(end - start))
+        #En caso de fallar se produce una alerta
         if full_rows == False:
-            print("tiempo: " + str(end - start))
             self.lblAlert.setText("Resultado: Error al procesar")
             return
         else:

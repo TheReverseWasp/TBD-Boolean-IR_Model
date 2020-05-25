@@ -1,10 +1,11 @@
-aqui va la organizacion de los archivos de datos
+aqui va la organizacion de los archivos de datos:
 
-00_GC_data      ->      Datos del Corpus de Google
-00_other        ->      Archivos generados de soporte en las tareas (generados automaticamente)
-01_Cleaned_data ->      Datos limpiados de simbolos que no sirven en la tarea (generados automaticamente)
-02_lemma_data   ->      Datos corregidos a lemmas (generados automaticamente)
-03_words_data_s ->      Archivos de similitud de cada palabra para facilitar la busqueda (generados automaticamente)
-04_words_simmil ->      Archivos de similaridad por palabra (generados automaticamente)
+00_GC_data      ->      Datos del Corpus de Google.
+00_other        ->      Archivos generados de soporte en las tareas (generados automaticamente).
+01_Cleaned_data ->      Datos limpiados de simbolos que no sirven en la tarea (generados automaticamente).
+02_lemma_data   ->      Datos corregidos a lemmas (generados automaticamente).
+03_en_only      ->      Datos del corpus considerando solo palabras en ingles.
+04_words_data_s ->      Archivos de similitud de cada palabra para facilitar la busqueda (generados automaticamente).
+05_words_simmil ->      Archivos de similaridad por palabra (generados automaticamente).
 
-Nota: Estas carpetas deben estar creadas mas (algunas) pueden no tener datos dentro. Solo 00_GC_data debe contener datos para poder trabajar
+Nota: Estas carpetas deben estar creadas mas (algunas) pueden no tener datos dentro. Solo 00_GC_data debe contener datos para poder trabajar.

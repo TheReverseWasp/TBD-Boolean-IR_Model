@@ -1,5 +1,8 @@
 from complementos import *
 
+#Script de lemmatizacion (ejecucion obligatoria)
+#guarda los archivos dentro de ../Datos/02_lemma_data/ con el mismo nombre que en el corpus
+
 def main():
     filenames = get_filenames()
     print("file inicio")

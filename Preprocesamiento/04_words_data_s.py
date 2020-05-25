@@ -1,5 +1,9 @@
 from complementos import *
 
+#Script de generacion de palabras correlacionadas a cada palabra
+#genera un json por cada palabra
+#ejecucion obligatoria
+
 def main():
     filenames = get_filenames()
     fnumber = 0

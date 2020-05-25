@@ -1,5 +1,8 @@
 from complementos import *
 
+#Script de limpieza de stopwords (ejecucion obligatoria)
+#Guarda los archivos en ../Datos/01_Cleaned_data/without_stop/ con el mismo nombre que en el corpus
+
 def main():
     filenames = get_filenames()
     fnumber = 0

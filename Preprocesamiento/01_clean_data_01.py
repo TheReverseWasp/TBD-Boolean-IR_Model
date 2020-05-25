@@ -1,5 +1,9 @@
 from complementos import *
 
+#script de limpieza de todo el corpus eliminando simbolos
+#guarda los archivos en una carpeta dentrohomonima dentro de la carpeta datos con el nombre without_symbols
+#los archivos se guardan con el mismo nombre con el que estan en el corpus
+
 def main():
     filenames = get_filenames()
     fnumber = 0
